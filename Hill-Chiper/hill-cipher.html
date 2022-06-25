@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hill Chiper by RajVin</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <center><strong><h1>Hill Cipher</h1></strong></center>
+
+  <button class="btn" onclick="window.location.href='../index.html'">Menu</button>
+
+<center><div id="inSec">
+  <center><p id="inputTM">Pilih Tipe Kunci </p></center><br>
+  <div id="EDMenu">
+  <center><button id="enhButton0" type="button">Enkripsi</button></center>
+  <center><button id="dehButton0" type="button">Dekripsi</button></center>
+</div></center>
+
+
+<center><select id="choice">
+      <option value="m22">2 X 2 Matrix</option>
+      <option value="m33">3 X 3 Matrix</option>
+  </select></center>
+
+  <center><form id="m22">
+    <input id="tw0" type="number" name="index" min="0" max="25">
+    <input id="tw1" type="number" name="index" min="0" max="25"> <br />
+    <input id="tw2" type="number" name="index" min="0" max="25">
+    <input id="tw3" type="number" name="index" min="0" max="25">
+  </form></center>
+
+
+  <center><form id="m33">
+    <input id="tr0" type="number" name="index" min="0" max="25">
+    <input id="tr1" type="number" name="index" min="0" max="25">
+    <input id="tr2" type="number" name="index" min="0" max="25">
+    <input id="tr3" type="number" name="index" min="0" max="25">
+    <input id="tr4" type="number" name="index" min="0" max="25">
+    <input id="tr5"  type="number" name="index" min="0" max="25">
+    <input id="tr6" type="number" name="index" min="0" max="25">
+    <input id="tr7" type="number" name="index" min="0" max="25">
+    <input id="tr8" type="number" name="index" min="0" max="25">
+  </form></center>
+
+  <center><button id="subButtonH" type="button">Submit</button><br></center>
+
+</div>
+
+<!-- need to use "strip" function in encrypt.js -->
+<script src="scripts/util.js"></script>
+<script src="scripts/storage.js"></script>
+<script src="scripts/index.js"></script>
+</body>
+<footer>
+  <p>by rajvin</p>
+</footer>
+
+</html>
